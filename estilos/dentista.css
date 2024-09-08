@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    margin-bottom: 50px;
+}
+
+.linha-cabecalho {
+    border: none;
+    border-top: 3px solid #1B9EDA;
+}
+
+.cabecalho ul a {
+    text-align: center;
+    font-size: 1.2em;
+    color: #1B9EDA;
+    text-align: center;
+}
+
+.cabecalho ul a:hover {
+    text-align: center;
+    font-size: 1.2em;
+    color: #1e82b1;
+    text-align: center;
+}
+
+.cabecalho .list-group-item {
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cabecalho button {
+    height: 3em;
+    font-weight: bold;
+}
+
+.titulo p {
+    font-size: 1.8em;
+    color: #35A9DE;
+}
+
+.titulo .titulo-principal {
+    font-size: 3.5em;
+    color: #1e82b1;
+    font-weight: bold;
+}
+
+.sobre-nos {
+    background-color: rgb(248, 247, 247);
+    border: 0.5px solid #1B9EDA;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.container-sobre-nos h2 {
+    text-align: center;
+    color: #1e82b1;
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+.sobre-nos p {
+    color: #1e82b1;
+    text-align: center;
+}
+
+.container-planos {
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.planos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.planos .basico, .planos .intermediario, .planos .completo, .planos .ortodontia, .planos .familiar, .planos .empresarial {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planos h4 {
+    color: #1e82b1;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.servicos h3 {
+    color: #1e82b1;
+    font-weight: bold;
+}
+
+.servicos img {
+    border-radius: 15px;
+}
+
+.servicos h4 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #35A9DE;
+}
+
+@media (min-width: 768px) {
+    .servicos img {
+        width: 800px;
+    }
+
+    .planos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .planos div {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
