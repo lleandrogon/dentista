@@ -2,6 +2,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .cabecalho {
@@ -39,21 +40,39 @@
     font-weight: bold;
 }
 
+.titulo .titulo-principal {   
+    font-size: 2.8em;
+    color: #1e82b1;
+    font-weight: bold;
+}
+
 .titulo p {
-    font-size: 1.8em;
+    font-size: 2.0em;
     color: #35A9DE;
 }
 
-.titulo .titulo-principal {
-    font-size: 3.5em;
-    color: #1e82b1;
-    font-weight: bold;
+.botoes-titulo button {
+    background-color: #1B9EDA;
+    border: none;
+}
+
+.botoes-titulo a {
+    background-color: #1B9EDA;
+}
+
+.botoes-titulo button:hover {
+    background-color: #1e82b1;
+}
+
+.botoes-titulo a:hover {
+    background-color: #1e82b1;
 }
 
 .sobre-nos {
     background-color: rgb(248, 247, 247);
     border: 0.5px solid #1B9EDA;
     border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     width: 90%;
     margin-left: 5%;
 }
@@ -71,10 +90,8 @@
 }
 
 .container-planos {
-    background-color: #f0f8ff;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
 }
 
@@ -86,10 +103,10 @@
 
 .planos .basico, .planos .intermediario, .planos .completo, .planos .ortodontia, .planos .familiar, .planos .empresarial {
     background-color: #ffffff;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #1e82b1;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .planos h4 {
@@ -99,19 +116,70 @@
     margin-bottom: 10px;
 }
 
-.servicos h3 {
+.container-servicos h3 {
     color: #1e82b1;
     font-weight: bold;
 }
 
-.servicos img {
-    border-radius: 15px;
+.card-body h4 {
+    color: #35A9DE;
+    font-weight: 500;
 }
 
-.servicos h4 {
-    font-size: 1.5em;
-    font-weight: bolder;
-    color: #35A9DE;
+.card {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.agendacao {
+    border: 1.5px solid #35A9DE;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    width: 90%;
+}
+
+.agendacao h2 {
+    color: #1e82b1;
+    font-weight: bold;
+}
+
+.agendacao input {
+    border: 1.5px solid #35a9de5d;
+}
+
+.agendacao input:focus {
+    outline: none;
+}
+
+.agendacao select {
+    border: 1.5px solid #35a9de5d;
+}
+
+.agendacao button {
+    background-color: #1B9EDA;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+}
+
+.agendacao button:hover {
+    background-color: #1e82b1;
+    color: white;
+}
+
+.container-rodape {
+    background-color: #1B9EDA;
+    color: white;
+    font-size: 1.1em;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -128,5 +196,27 @@
     .planos div {
         flex: 1 1 45%;
         max-width: 45%;
+    }
+
+    .agendacao {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo img {
+        display: none;
+    }
+
+    .titulo .titulo-principal {
+        font-size: 2.2em;
+    }
+
+    .titulo p {     
+        font-size: 2.0em;
+    }
+
+    .rodape {
+        font-size: 0.9em;
     }
 }
